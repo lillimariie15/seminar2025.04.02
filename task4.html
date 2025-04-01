@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4</title>
+    <style>
+        body { font-family: Arial; max-width: 700px; margin: auto; padding: 20px; }
+        input, select { display: block; margin: 10px 0; width: 100%; padding: 8px; }
+        button { padding: 10px 15px; }
+        ul { padding-left: 0; }
+        li { list-style: none; margin: 5px 0; }
+        .employee-item { display: flex; justify-content: space-between; align-items: center; }
+        .stats { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>Employee Manager</h2>
+
+    <input type="text" id="nameInput" placeholder="Employee Name">
+    <input type="text" id="roleInput" placeholder="Role">
+    <select id="departmentInput">
+        <option value="">Select Department</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Sales">Sales</option>
+        <option value="HR">HR</option>
+    </select>
+    <button id="addEmployeeBtn">Add Employee</button>
+
+    <input type="text" id="searchInput" placeholder="Search by name...">
+
+    <ul id="employeeList"></ul>
+
+    <div class="stats" id="employeeCount">Total Employees: 0</div>
+    <div class="stats" id="departmentStats"></div>
+
+    <script src="task4.js"></script>
+</body>
+</html>
